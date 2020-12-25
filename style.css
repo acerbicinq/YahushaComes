@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+}
+
+body {
+  background:
+    radial-gradient(#222e2e 3px, transparent 4px),
+    radial-gradient(#222e2e 3px, transparent 4px),
+    linear-gradient(#324540 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #68737B 75px, #68737B 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #68737B 76px, #68737B 77px, transparent 78px, transparent 109px),
+  #324540;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items li {
+  display: inline-flex;
+}
+
+.nav-links {
+  color: #E6E7E1;
+  padding: 7px;
+}
+
+.home {
+  border-top: 4px solid #18161a;
+  background: rgba(230, 231, 225, 0.7);
+  height: 95vh;
+  width: auto;
+}
+ .home-content {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   margin: 20% auto;
+ }
+
+ .home-links ul {
+   display: inline-flex;
+ }
+ .home-links ul li {
+   list-style: none;
+   padding: 7px;
+ }
+
+ .education {
+   background: rgba(24, 22, 26, 0.7);
+   height: 65vh;
+   width: auto;
+ }
+ .education-content {
+   padding: 40px;
+   max-width: 1000px;
+   min-width: 500px;
+   margin: 0 auto;
+ }
+ .education-content .title h2 {
+   color: #e6e7e1;
+   margin: auto 10%;
+ }
+.education-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ .education-container {
+  height: 150px;
+  width: 400px;
+  border: 2px solid #18161a;
+  margin: 10px;
+ }
+ .education-container a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: inherit;
+   border: 1px solid red;
+ }
+ .schoolofletters {
+   border-top: 4px solid #18161a;
+   background: rgba(230, 231, 225, 0.7);
+   height: 95vh;
+ }
+
+.schoolofletters .title h2 {
+  margin: auto 20%;
+  padding: 40px;
+}
+ .schoolofletters-content {
+   max-width: 1000px;
+   min-width: 500px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ .about {
+   background: rgba(24, 22, 26, 0.7);
+   height: 50vh;
+   width: auto;
+ }
+.about .title h2 {
+  color: #e6e7e1;
+  margin: auto 20%;
+  padding: 40px;
+}
+.about-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-container {
+  height: 150px;
+  width: 400px;
+  border: 2px solid #18161a;
+  margin: 10px;
+}
+.about-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  border: 1px solid red;
+}
+ .contact {
+   border-top: 4px solid #18161a;
+   background: rgba(230, 231, 225, 0.7);
+   height: 50vh;
+   width: auto;
+ }
+
+ .contact .title h2 {
+   margin: auto 44%;
+   padding: 40px;
+ }
+ .contact-options {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+ .contact-container {
+   height: 150px;
+   width: 400px;
+   border: 2px solid #18161a;
+   margin: 10px;
+ }
+ .contact-container a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: inherit;
+   border: 1px solid red;
+ }
+ .footer-container {
+   background: rgba(24, 22, 26, 0.9);
+   height: 20vh;
+   width: auto;
+   color: #e6e7e1;
+ }
