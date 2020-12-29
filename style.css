@@ -22,29 +22,50 @@ body {
 h1, h2 {
   font-family: 'Cinzel', serif;
 }
+h2 {
+  font-size: 2rem;
+}
 a {
   text-decoration: none;
   list-style: none;
+  color: black;
 }
 .nav {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   padding: 2% 10%;
+  background: rgba(24, 22, 26, 0.7);
+
 }
 .nav-items li {
   display: inline-flex;
 }
+.logo {
 
+}
 .nav-links {
   color: #E6E7E1;
   padding: 7px;
+  border: 2px solid transparent;
 }
-
+.nav-links:hover, .nav-links:focus {
+  border-bottom: 2px solid #E6E7E1;
+}
 .home {
   border-top: 4px solid #18161a;
-  background: rgba(230, 231, 225, 0.7);
+  border-bottom: 4px solid #18161a;
+  background: url("YahushaComesHome.jpg") center/cover;
   height: 95vh;
   width: auto;
+  position: relative;
+  z-index: 1;
+}
+ .home-overlay {
+  position: absolute;
+  background: rgba(230, 231, 225, 0.3);
+  width: 100%;
+  height: inherit;
 }
  .home-content {
    display: flex;
@@ -53,9 +74,13 @@ a {
    justify-content: center;
    margin: 20% auto;
  }
-
+ .home h1 {
+   position: relative;
+   font-size: 3rem;
+ }
  .home-links ul {
    display: inline-flex;
+   position: relative;
  }
  .home-links ul li {
    list-style: none;
@@ -84,18 +109,30 @@ a {
   flex-wrap: wrap;
 }
  .education-container {
+  margin: 10px;
   height: 150px;
   width: 400px;
   border: 2px solid #18161a;
-  margin: 10px;
+  border-radius: 20px;
  }
  .education-container a {
    display: flex;
    justify-content: center;
    align-items: center;
    height: inherit;
-   border: 1px solid red;
  }
+ .podcast-container {
+  background: linear-gradient(#7f6f78, #b38d76);
+}
+.articles-container {
+ background: linear-gradient(#758A8D, #9f8b8a);
+}
+.presentations-container {
+ background: linear-gradient(#a6a7ae, #758A8D);
+}
+.history-container {
+ background: linear-gradient(#b38d76, #debf93);
+}
  .schoolofletters {
    border-top: 4px solid #18161a;
    background: rgba(230, 231, 225, 0.7);
@@ -136,13 +173,19 @@ a {
   width: 400px;
   border: 2px solid #18161a;
   margin: 10px;
+  border-radius: 20px;
 }
 .about-container a {
   display: flex;
   justify-content: center;
   align-items: center;
   height: inherit;
-  border: 1px solid red;
+}
+.bio-container {
+  background: linear-gradient(#758A8D, #cacac8);
+}
+.FAQ-container {
+  background: linear-gradient(#a6a7ae, #758A8D);
 }
  .contact {
    border-top: 4px solid #18161a;
@@ -164,15 +207,24 @@ a {
  .contact-container {
    height: 150px;
    width: 400px;
-   border: 2px solid #18161a;
    margin: 10px;
+   border-radius: 20px;
  }
  .contact-container a {
    display: flex;
    justify-content: center;
    align-items: center;
    height: inherit;
-   border: 1px solid red;
+
+ }
+ .phone-container {
+   background: linear-gradient(#b38d76, #debf93);
+ }
+ .email-container {
+   background: linear-gradient(#debf93, #b38d76);
+ }
+ .facebook-container {
+   background: linear-gradient(#b38d76, #debf93);
  }
  footer {
    background: rgba(24, 22, 26, 0.9);
@@ -181,13 +233,14 @@ a {
    height: 20vh;
    width: 50%;
    color: #e6e7e1;
-   border: 2px solid blue;
+   border: 2px solid transparent;
    margin: auto;
    display: flex;
    justify-content: center;
+   padding-top: 5%;
  }
 .ftr-option {
-  border: 2px solid red;
+  border: 2px solid transparent;
 }
 
 .address {
@@ -197,7 +250,7 @@ a {
 }
 .ftr-spacer {
   display: inline-block;
-  border: 2px solid yellow;
+  border: 2px solid transparent;
 }
 .ftr-contact {
   display: inline-block;
